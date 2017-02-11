@@ -27,7 +27,16 @@
         </div>
         You are <b> {{offsetY}} </b>&nbsp; pixels away from start position on horisontal line
     </div>
+    <br />
+    <div style="margin:0 auto; width:300px;" class="alert alert-danger" role="alert" ng-if="offsetY > 150">
+        You are half way finished to Y=300
 
+    </div>
+    <br />
+    <div style="margin:0 auto; width:300px;" class="alert alert-danger" role="alert" ng-if="offsetX > 150">
+        You are half way finished to X=300
+
+    </div>
 
 </body>
 </html>
