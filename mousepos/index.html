@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> 
+    <link rel="stylesheet" href="/Scripts/style.css" />
+    <script src="/Scripts/app.js"></script>
+</head>
+<body ng-app="mouse" ng-controller="mouseposition">
+    <div class="box" ng-click="doClick($event)">
+
+    </div><br />
+    <div class="bars">
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{offsetX / 3}}%;">
+                <span class="sr-only">60% Complete</span>
+            </div> <br />
+        </div>You are<b> {{offsetX}} </b>&nbsp; pixels away from start position on vertical line<br />
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:{{offsetY / 3}}%;">
+                <span class="sr-only">60% Complete (success)</span>
+            </div>
+        </div>
+        You are <b> {{offsetY}} </b>&nbsp; pixels away from start position on horisontal line
+    </div>
+
+
+</body>
+</html>

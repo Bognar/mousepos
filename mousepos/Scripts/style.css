@@ -1,0 +1,14 @@
+﻿.box {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background: #321;
+    display: block;
+    position:relative;
+    
+}
+.bars {
+    display:block;
+    margin:0 auto;
+    width:300px;
+}
